@@ -10,6 +10,7 @@ for i=i:10
    
    
     writeDigitalPin(a,"D8",0);
+    pause(.5)
     writeDigitalPin(a,"D8",1);
     pause(.5);
 end
