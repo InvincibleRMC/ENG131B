@@ -37,8 +37,8 @@ for i=1:100
 end
 
 %Calculate averages of V and NTU
-meanV =sum(v)/length(v);
-meanNTU = sum(NTU)/length(NTU);
+meanV = mean(v);
+meanNTU = mean(NTU);
 
 %Display averages
 disp("Average voltage: "+meanV + " Average NTU: " + meanNTU);
