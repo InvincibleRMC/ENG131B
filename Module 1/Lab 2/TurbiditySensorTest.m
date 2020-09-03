@@ -7,7 +7,7 @@ clc;
 a = arduino();
 
 %Read button input on channel D7
-readDigitalPin(a,"D7");
+testButton = readDigitalPin(a,"D7");
 
 %Variable initialization 
 v=[];
