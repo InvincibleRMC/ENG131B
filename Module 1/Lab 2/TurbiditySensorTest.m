@@ -27,7 +27,12 @@ for i=1:100
     
     %stores voltage and NTU
     v(i)= readVoltage(a,"A0");
-    NTU(i)=-260*v(i)^2+1800*v(i)-3000;
+    
+    %Old NTU equation
+    %NTU(i)=-260*v(i)^2+1800*v(i)-3000;
+    
+    %Calibrated NTU equation
+    NTU(i) = -1352*v(i)+5645;
     
     %displays voltage and NTU
     disp(v(i) + " " + NTU(i));
