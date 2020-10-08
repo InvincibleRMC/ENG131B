@@ -1,4 +1,4 @@
-%Code Setup
+%Code setup 
 clear; close all; clc;
 
 %Load capacitor data
@@ -33,7 +33,6 @@ end
 
 %Stores the counters and their names
 counters = {wonderfulCounter, "wonderful"; goodCounter, "good"; okayCounter, "okay"; uselessCounter, "useless"};
-
 %prints out the data for all the counters
 for k = 1:length(counters)
    fprintf("%.2f%% are %s capacitors.\n",findPercentage(counters{k,1}),counters{k,2});
