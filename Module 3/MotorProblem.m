@@ -5,7 +5,13 @@ clear; close all; clc;
 load('VoltageData.mat');
 
 %Data Test
+figure("Name","Test");
 plot(Volt3(1:length(Volt3)),Volt3((length(Volt3)+1):length(Volt3)*2));
+
+%label test
+title("Voltage Vs. Time");
+xlabel("Time");
+ylabel("Voltage");
 
 %Cell of voltages
 voltages= {Volt3,Volt7,Volt10,Volt15};
@@ -23,6 +29,7 @@ rpms = [rpms, getRPM(voltages{i})];
 
 end
 
+figure("Name","RPMS");
 %plots the data
 plot(voltageValues,rpms);
 
