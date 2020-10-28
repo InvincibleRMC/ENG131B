@@ -1,12 +1,14 @@
 %Code set up
 clear; close all; clc;
 
+%load('KaiCode.mat');
+
 %load data
 load('VoltageData.mat');
 
 %Data Test
 figure("Name","Test");
-plot(Volt3(1:length(Volt3)),Volt3((length(Volt3)+1):length(Volt3)*2));
+%plot(volts3(1:length(volts3)),volts3((length(volts3)+1):length(volts3)*2));
 
 %label test
 title("Voltage Vs. Time");
@@ -14,8 +16,7 @@ xlabel("Time");
 ylabel("Voltage");
 
 %Cell of voltages
-voltages= {Volt3,Volt7,Volt10,Volt15};
-
+voltages= {Volt3,Volt7,Volt10,Volt15,};
 %array of rpms
 rpms =[];
 
@@ -37,8 +38,7 @@ plot(voltageValues,rpms);
 xlabel("Voltage");
 ylabel("RPMS");
 title("RPMS Vs. Voltage");
-xlim([0,15]);
-ylim([0,2000]);
+
 
 %calculates best fit line
 p=polyfit(voltageValues,rpms,1);
@@ -77,6 +77,3 @@ end
 rpm=signalCount*60/(voltageData(length(voltageData)) - voltageData(1));
 
 end
-
-
-

@@ -1,5 +1,4 @@
-%Code setup 
-clear; close all; clc;
+
 
 %Load capacitor data
 load('thicknesses.mat');
