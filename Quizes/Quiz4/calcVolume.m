@@ -1,9 +1,3 @@
-%code set up
-clear; all off; clc;
-%tests cases
-calcVolume(3,1,"circle")
-calcVolume(3,1,"square")
-calcVolume(3,1,"triangle")
 
 %Calculates volume
 function v = calcVolume(l,h,shape)

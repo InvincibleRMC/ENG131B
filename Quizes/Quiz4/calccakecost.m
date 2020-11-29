@@ -1,10 +1,3 @@
-%code set up
-clear; all off; clc;
-%tests cases
-calcCakeCost("Vanilla",1)
-calcCakeCost("Chocolate",1)
-calcCakeCost("Strawberry",1)
-calcCakeCost("Blueberry",1)
 
 %calculates cake cost
 function c = calcCakeCost(type,v)
